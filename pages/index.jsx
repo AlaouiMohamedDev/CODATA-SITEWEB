@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Banner from '../components/Banner'
 import Header from '../components/Header'
 import SideBar from '../components/SideBar'
 
@@ -16,6 +17,7 @@ const Home= () => {
 
       <Header/>
       <SideBar/>
+      <Banner />
     </div>
   )
 }

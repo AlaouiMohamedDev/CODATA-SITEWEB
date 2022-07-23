@@ -1,9 +1,15 @@
 import React, { useEffect } from 'react'
 import  { useRouter} from 'next/router';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 export default function Sidebar() {
 
+    useEffect(() =>{
+        AOS.init();
+      },[])
+    
     const router = useRouter();
 
     const closeSidebar = () =>{
@@ -12,6 +18,12 @@ export default function Sidebar() {
         sidebar1.classList.add('hidden')
         sidebar2.classList.add('-right-full')
         sidebar2.classList.remove('right-0')
+    }
+
+    const toggleList = () => {
+        const list = document.querySelector('.list')
+        list.classList.toggle('hidden')
+        list.classList.toggle('flex')
     }
 
     
@@ -29,7 +41,38 @@ export default function Sidebar() {
                 <div className="flex flex-col px-5 text-gray-700  text-right font-semibold">
                     <span class="cursor-pointer hover:text-gray-500 py-4 border-y border-gray-200">الرئيسية</span>
                     <span class="cursor-pointer hover:text-gray-500 py-4 border-b border-gray-200">من نحن</span>
-                    <span class="cursor-pointer hover:text-gray-500 py-4 border-b border-gray-200">خدماتنا</span>
+                    <div class="cursor-pointer hover:text-gray-500 py-4 border-b border-gray-200">
+                        <div onClick={toggleList} class=" flex items-center justify-between">
+                            <i class='pr-1 bx bxs-chevron-down'></i>
+                            <span>خدماتنا</span>
+                        </div>
+                        <nav  class="hidden flex-col transition-all duration-500 text-sm text-right pr-10 py-5 space-y-3 list">
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">خدماتنا</a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">بناء الهوية التجارية و التصميم</a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">تصميم و برمجة المواقع </a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">الحملات الإعلانية</a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">الفيديوهات التسويقية</a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                            <div class="flex items-center  justify-end">
+                                <a class="hover:text-main transition-all duration-500 cursor-pointer">ادارة مواقع التواصل الاجتماعي</a>
+                                <i class='bx bx-stop text-main pl-3'></i>
+                            </div>
+                        </nav>
+                    </div>
                     <span class="cursor-pointer hover:text-gray-500 py-4 border-b border-gray-200">تواصل معنا</span>
                     <div class="flex items-center justify-end py-4 border-b border-gray-200 ">
                         <img src="/fr-icon.png" alt="Codata logo" className="h-5"/>

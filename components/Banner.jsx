@@ -10,11 +10,11 @@ export default function Banner() {
             <p class="text-gray-500 text-md  w-2/3 ml-auto">سمعتنا وجودة عملنا هما رأسمالنا الأهم و الوحيد
             لذلك كونوا على ثقة تامة أنكم في أيد أمينة.</p>
             <div class="flex items-center justify-end space-x-7">
-                <div class="flex items-center text-gray-900 text-sm space-x-3">
+                <div class="flex items-center text-gray-900 text-sm space-x-3 cursor-pointer hover:text-gray-700 duration-300">
                     <i class='bx bx-chevrons-left'></i>
                     <span class="">تواصل معنا</span>
                 </div>
-                <button class="bg-gray-900 text-white py-5 px-5 rounded text-lg font-bold w-1/3">لنبدأ الآن</button>
+                <button class="bg-gray-900 hover:bg-gray-700 duration-500 text-white py-5 px-5 rounded text-lg font-bold w-1/3">لنبدأ الآن</button>
             </div>
         </div>
         <img src="/banner.png" alt="banner" class="md:hidden h-full object-contain"/>

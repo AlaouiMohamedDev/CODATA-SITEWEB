@@ -43,7 +43,7 @@ export default function Header() {
 }
 
   return (
-    <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-700 bg-white ">
+    <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-300 bg-white ">
         <div class="md:flex hidden items-center mx-7">
           <img src="/fr-icon.png" alt="Codata logo" className="h-5"/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>

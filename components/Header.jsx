@@ -4,10 +4,36 @@ import 'aos/dist/aos.css'
 
 export default function Header() {
 
-  useEffect(() =>{
+  useEffect(() => {
     AOS.init();
-  },[])
+    const header = document.querySelector('.header')
+    const menu = document.querySelector('.menu')
+    window.addEventListener('scroll', () => {
+      if ((window.scrollY || window.pageYOffset) > 10 ) {
+        header.classList.add('sticky');
+          header.classList.remove('py-11');
+          header.classList.add('py-5');
+          header.classList.add('shadow');
+          menu.classList.add('text-white');
+          menu.classList.add('bg-gray-900');
+          menu.classList.remove('text-gray-700');
+          menu.classList.remove('bg-gray-100');
+      }else{
+        header.classList.remove('sticky');
+        header.classList.remove('py-5');
+        header.classList.add('py-11');
+        header.classList.remove('shadow');
+        menu.classList.add('text-white');
+        menu.classList.add('bg-gray-900');
+        menu.classList.remove('text-white');
+        menu.classList.remove('bg-gray-900');
 
+      }
+  
+  })
+
+},[]);
+ 
   const sidebar = () => {
     const sidebar1 = document.querySelector('.sidebar1')
     const sidebar2 = document.querySelector('.sidebar2')
@@ -17,7 +43,7 @@ export default function Header() {
 }
 
   return (
-    <header class="flex items-center justify-between py-11 px-5">
+    <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-700 bg-white ">
         <div class="md:flex hidden items-center mx-7">
           <img src="/fr-icon.png" alt="Codata logo" className="h-5"/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>
@@ -52,7 +78,7 @@ export default function Header() {
         </nav>
         {/*LOGO*/}
         <div class="md:hidden"  onClick= {sidebar}>
-          <i class=' cursor-pointer bx bx-menu px-2 text-gray-700
+          <i class='menu cursor-pointer bx bx-menu px-2 text-gray-700
           py-1 text-3xl bg-gray-100 rounded-full'></i>
         </div>
         <img src="/logos-1.png" alt="Codata logo" className="md:h-12 h-10 "/>

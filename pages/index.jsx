@@ -7,7 +7,7 @@ import SideBar from '../components/SideBar'
 
 const Home= () => {
   return (
-    <div className="font-tajwal">
+    <div className="font-tajwal h-screen">
       <Head>
         <title>Codata Agency</title>
         <link rel="icon" href="/favicon.ico" />

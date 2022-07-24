@@ -15,6 +15,10 @@ module.exports = {
       },
       backgroundColor:{
         'main':'#00ffc3'
+      },
+      backgroundImage:{
+        'Propertypattern':'url("/pattern.png")'
+
       }
     },
   },

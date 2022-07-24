@@ -27,9 +27,7 @@ export default function Header() {
         menu.classList.add('bg-gray-900');
         menu.classList.remove('text-white');
         menu.classList.remove('bg-gray-900');
-
       }
-  
   })
 
 },[]);
@@ -45,7 +43,7 @@ export default function Header() {
   return (
     <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-300 bg-white ">
         <div class="md:flex hidden items-center mx-7">
-          <img src="/fr-icon.png" alt="Codata logo" className="h-5"/>
+          <img src="/fr-icon.png" alt="Codata logo" className="h-5 "/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>
         </div>
         <nav class="md:flex hidden items-center text-md font-semibold text-gray-600"  dir="rtl">
@@ -60,8 +58,8 @@ export default function Header() {
             <div class="relative group flex flex-col items-center">
               <span class="flex items-center cursor-pointer hover:text-main mx-7">خدماتنا<i class='pr-1 bx bxs-chevron-down'></i></span>
               <span class="absolute bg-main rounded h-0.5 w-0 -bottom-2 transition-all duration-500 group-hover:w-12"></span>
-              <div  class="absolute top-9 right-5  bg-white shadow-xl rounded text-sm transition-all duration-500 text-gray-500 w-60 py-5 pr-6 opacity-0 group-hover:opacity-100">
-                <nav class="flex flex-col text-right space-x-10 space-y-4">
+              <div class="absolute top-9 right-5 bg-white shadow-xl rounded text-sm transition-all duration-500 text-gray-500 w-60 py-5 pr-6 opacity-0 group-hover:opacity-100">
+                <nav class="flex-col text-right space-x-10 space-y-4 hidden group-hover:flex transition-all duration-500">
                   <a data-aos="fade-left" data-aos-duration="1500" class="hover:text-main transition-all duration-500 cursor-pointer">خدماتنا</a>
                   <a data-aos="fade-left" data-aos-duration="1500" class="hover:text-main transition-all duration-500 cursor-pointer">بناء الهوية التجارية و التصميم</a>
                   <a data-aos="fade-left" data-aos-duration="1500" class="hover:text-main transition-all duration-500 cursor-pointer">تصميم و برمجة المواقع </a>
@@ -81,7 +79,7 @@ export default function Header() {
           <i class='menu cursor-pointer bx bx-menu px-2 text-gray-700
           py-1 text-3xl bg-gray-100 rounded-full'></i>
         </div>
-        <img src="/logos-1.png" alt="Codata logo" className="md:h-12 h-10 "/>
+        <img src="/logos-1.png" alt="Codata logo" className="md:h-12 h-10 cursor-pointer"/>
     </header>
   )
 }

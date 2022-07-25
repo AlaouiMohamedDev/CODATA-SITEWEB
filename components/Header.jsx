@@ -10,7 +10,7 @@ export default function Header() {
     const menu = document.querySelector('.menu')
     window.addEventListener('scroll', () => {
       if ((window.scrollY || window.pageYOffset) > 10 ) {
-        header.classList.add('sticky');
+          // header.classList.add('sticky');
           header.classList.remove('py-11');
           header.classList.add('py-5');
           header.classList.add('shadow');
@@ -19,14 +19,14 @@ export default function Header() {
           menu.classList.remove('text-gray-700');
           menu.classList.remove('bg-gray-100');
       }else{
-        header.classList.remove('sticky');
-        header.classList.remove('py-5');
-        header.classList.add('py-11');
-        header.classList.remove('shadow');
-        menu.classList.add('text-white');
-        menu.classList.add('bg-gray-900');
-        menu.classList.remove('text-white');
-        menu.classList.remove('bg-gray-900');
+          // header.classList.remove('sticky');
+          header.classList.remove('py-5');
+          header.classList.add('py-11');
+          header.classList.remove('shadow');
+          menu.classList.add('text-white');
+          menu.classList.add('bg-gray-900');
+          menu.classList.remove('text-white');
+          menu.classList.remove('bg-gray-900');
       }
   })
 
@@ -41,7 +41,7 @@ export default function Header() {
 }
 
   return (
-    <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-300 bg-white ">
+    <header class="flex items-center justify-between py-11 px-5 sticky z-50 top-0 header duration-300 bg-white ">
         <div class="md:flex hidden items-center mx-7">
           <img src="/fr-icon.png" alt="Codata logo" className="h-5 "/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>
@@ -57,7 +57,7 @@ export default function Header() {
             </div>
             <div class="relative group flex flex-col items-center">
               <span class="flex items-center cursor-pointer hover:text-main mx-7">خدماتنا<i class='pr-1 bx bxs-chevron-down'></i></span>
-              <span class="absolute bg-main rounded h-0.5 w-0 -bottom-2 transition-all duration-500 group-hover:w-12"></span>
+              <span class="absolute  bg-main rounded h-0.5 w-0 -bottom-2 transition-all duration-500 group-hover:w-12"></span>
               <div class="absolute top-9 right-5 bg-white shadow-xl rounded text-sm transition-all duration-500 text-gray-500 w-60 py-5 pr-6 opacity-0 group-hover:opacity-100">
                 <nav class="flex-col text-right space-x-10 space-y-4 hidden group-hover:flex transition-all duration-500">
                   <a data-aos="fade-left" data-aos-duration="1500" class="hover:text-main transition-all duration-500 cursor-pointer">خدماتنا</a>

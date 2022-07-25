@@ -3,12 +3,13 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Properties from '../components/Properties'
 import SideBar from '../components/SideBar'
+import YourTrip from '../components/YourTrip'
 
 
 
 const Home= () => {
   return (
-    <div className="font-tajwal h-screen">
+    <div className="font-tajwal">
       <Head>
         <title>Codata Agency</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,6 +21,7 @@ const Home= () => {
       <SideBar/>
       <Banner />
       <Properties />
+      <YourTrip/>
     </div>
   )
 }

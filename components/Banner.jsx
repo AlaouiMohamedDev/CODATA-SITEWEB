@@ -6,7 +6,7 @@ export default function Banner() {
         <img src="/banner.png" alt="banner" class="hidden md:flex h-full w-1/2 object-contain"/>
         <div class="flex flex-col text-right md:w-1/2 mx-5 md:mr-14 space-y-16 my-10">
             <h6 class="text-red-500 text-sm font-bold ">وكالة إبداعية ترافق مشاريعكم</h6>
-            <p class="text-7xl text-gray-900 font-black">الحلول الإبداعية للأفراد والشركات</p>
+            <p class="text-7xl text-Cblue font-black">الحلول الإبداعية للأفراد والشركات</p>
             <p class="text-gray-500 text-md  w-2/3 ml-auto">سمعتنا وجودة عملنا هما رأسمالنا الأهم و الوحيد
             لذلك كونوا على ثقة تامة أنكم في أيد أمينة.</p>
             <div class="flex items-center justify-end space-x-7">

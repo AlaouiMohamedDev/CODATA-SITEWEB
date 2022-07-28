@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import HowWeWork from '../components/HowWeWork'
 import Properties from '../components/Properties'
 import SideBar from '../components/SideBar'
 import YourTrip from '../components/YourTrip'
@@ -22,6 +23,7 @@ const Home= () => {
       <Banner />
       <Properties />
       <YourTrip/>
+      <HowWeWork />
     </div>
   )
 }

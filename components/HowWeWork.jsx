@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HowWeWork() {
   return (
-    <div class="py-16 px-10 md:px-20 flex flex-col items-center" >
+    <div class="md:px-20 flex flex-col items-center" >
         <h6 class="text-center text-sm text-red-500 mb-8 font-bold">خلطتنا السحرية</h6>
         <h1 class="text-center text-Cblue text-5xl font-black">كيف نعمل معاً</h1>
         <div class="flex flex-col md:flex-row md:space-x-12 space-y-10 md:space-y-0 my-10  mx-10  md:mx-52 md:my-32" dir="rtl">

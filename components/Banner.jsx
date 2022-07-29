@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Banner() {
   return (
-    <div class="flex flex-col md:flex-row mb-20 md:mb-0 py-10 h-screen">
+    <div class="flex flex-col md:flex-row mb-20 md:mb-0 py-10 h-screen items-center">
         <img src="/banner.png" alt="banner" class="hidden md:flex h-full w-1/2 object-contain"/>
         <div class="flex flex-col text-right md:w-1/2 mx-5 md:mr-14 space-y-16 my-10">
             <h6 class="text-red-500 text-sm font-bold ">وكالة إبداعية ترافق مشاريعكم</h6>
@@ -17,7 +17,6 @@ export default function Banner() {
                 <button class="bg-gray-900 hover:bg-gray-700 duration-500 text-white py-5 px-5 rounded text-lg font-bold w-1/3">لنبدأ الآن</button>
             </div>
         </div>
-        <img src="/banner.png" alt="banner" class="md:hidden h-full object-contain"/>
     </div>
   )
 }

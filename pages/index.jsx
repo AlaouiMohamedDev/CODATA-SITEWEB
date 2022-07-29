@@ -4,13 +4,14 @@ import Header from '../components/Header'
 import HowWeWork from '../components/HowWeWork'
 import Properties from '../components/Properties'
 import SideBar from '../components/SideBar'
+import WhyChooseUs from '../components/WhyChooseUs'
 import YourTrip from '../components/YourTrip'
 
 
 
 const Home= () => {
   return (
-    <div className="font-tajwal">
+    <div className="font-tajwal ">
       <Head>
         <title>Codata Agency</title>
         <link rel="icon" href="/favicon.ico" />
@@ -24,6 +25,7 @@ const Home= () => {
       <Properties />
       <YourTrip/>
       <HowWeWork />
+      <WhyChooseUs />
     </div>
   )
 }

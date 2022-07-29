@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Properties() {
   return (
-    <div class="relative flex flex-col  md:flex-row items-center py-10  container mx-auto space-x-5 justify-evenly bg-white" >
+    <div class="flex flex-col  md:flex-row items-center py-10  container mx-auto space-x-5 justify-evenly bg-white" >
         <section class="w-full rounded-lg flex flex-col py-10 items-center  space-y-4" >
             <img src="/shield.png" class = "h-44 object-contain" alt="" />
             <h1 class = "text-xl font-semibold text-gray-700" >نتائج فوق المتوقع</h1>

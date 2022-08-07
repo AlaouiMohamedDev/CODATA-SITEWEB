@@ -10,7 +10,8 @@ export default function Header() {
     const menu = document.querySelector('.menu')
     window.addEventListener('scroll', () => {
       if ((window.scrollY || window.pageYOffset) > 10 ) {
-        header.classList.add('sticky');
+          header.classList.remove('bg-transparent');
+          header.classList.add('bg-white');
           header.classList.remove('py-11');
           header.classList.add('py-5');
           header.classList.add('shadow');
@@ -19,7 +20,8 @@ export default function Header() {
           menu.classList.remove('text-gray-700');
           menu.classList.remove('bg-gray-100');
       }else{
-        header.classList.remove('sticky');
+        header.classList.remove('bg-white');
+        header.classList.add('bg-transparent');
         header.classList.remove('py-5');
         header.classList.add('py-11');
         header.classList.remove('shadow');
@@ -41,7 +43,7 @@ export default function Header() {
 }
 
   return (
-    <header class="flex items-center justify-between py-11 px-5 sticky top-0 header duration-300 bg-white ">
+    <header class=" bg-transparent w-full duration-500 ease-in-out flex items-center justify-between py-11 px-5 top-0 header z-20 bg-white ">
         <div class="md:flex hidden items-center mx-7">
           <img src="/fr-icon.png" alt="Codata logo" className="h-5 "/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>

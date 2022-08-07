@@ -39,7 +39,7 @@ export default function Header() {
     const sidebar2 = document.querySelector('.sidebar2')
     sidebar1.classList.remove('hidden')
     sidebar2.classList.remove('-right-full')
-    sidebar2.classList.add('right-0');
+    sidebar2.classList.add('right-0'); 
 }
 
   return (

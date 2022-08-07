@@ -11,10 +11,12 @@ module.exports = {
         'tajwal':['Tajawal', 'sans-serif']
       },
       textColor:{
-        'main':'#00ffc3'
+        'main':'#00ffc3',
+        'Cblue':'#23496F'
       },
       backgroundColor:{
-        'main':'#00ffc3'
+        'main':'#00ffc3',
+        'Cblue':'#23496F'
       },
       backgroundImage:{
         'Propertypattern':'url("/pattern.png")'

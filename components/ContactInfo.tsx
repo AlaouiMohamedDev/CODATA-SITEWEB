@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useForm } from "react-hook-form";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import axios from 'axios';
 
 function ContactInfo() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -10,9 +11,12 @@ function ContactInfo() {
         AOS.init();
     },[]);
 
-    const onSubmit = (data: any) => {
-        alert("look your console")
-        console.log(data)
+    const onSubmit = async (data: any) => {
+        const res = await axios.post('/api/sendemail',data);
+        if(res.status == 200) {
+            alert("look your console")
+            console.log(res.data.message);
+        }
     } 
   return (
     <div className='flex flex-col md:flex-row items-center justify-evenly md:space-x-44 py-20' >

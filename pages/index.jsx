@@ -15,14 +15,14 @@ import YourTrip from '../components/YourTrip'
 const Home= () => {
   return (
 
-    <div className="font-tajwal h-screen box-border w-screen overflow-x-hidden ">
+    <div className="relative font-tajwal h-screen box-border w-screen overflow-x-hidden ">
       <Head>
         <title>Codata Agency</title>
         <link rel="icon" href="/favicon.ico" />
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
         <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet"></link>
       </Head>
-
+    <main className='px-15' >
       <Header/>
       <SideBar/>
       <Banner />
@@ -32,7 +32,9 @@ const Home= () => {
       <WhyChooseUs />
       <OurServices />
       <ExcitedToWorkToGether  />
-      <Footer />
+    </main>
+    
+    <Footer />
 
     </div>
   )

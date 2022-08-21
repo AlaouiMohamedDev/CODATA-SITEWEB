@@ -22,7 +22,7 @@ const Home= () => {
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
         <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet"></link>
       </Head>
-    <main className='px-15' >
+    <main className='container mx-auto px-15' >
       <Header/>
       <SideBar/>
       <Banner />
@@ -31,9 +31,9 @@ const Home= () => {
       <HowWeWork />
       <WhyChooseUs />
       <OurServices />
-      <ExcitedToWorkToGether  />
     </main>
     
+    <ExcitedToWorkToGether  />
     <Footer />
 
     </div>

@@ -65,7 +65,7 @@ export default function Header() {
               <span class="cursor-pointer hover:text-main mx-7">الرئيسية</span>
               <span class="absolute bg-main rounded h-0.5 w-0 -bottom-2 transition-all duration-500 group-hover:w-12"></span>
             </div>
-            <div class="relative group flex flex-col items-center">
+            <div class="relative group flex flex-col items-center" onClick={() => router.push('/about')}>
               <span class="cursor-pointer hover:text-main mx-7">من نحن ؟</span>
               <span class="absolute bg-main rounded h-0.5 w-0 -bottom-2 transition-all duration-500 group-hover:w-12"></span>
             </div>

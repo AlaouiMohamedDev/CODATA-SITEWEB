@@ -48,7 +48,7 @@ export default function Header() {
 }
 
   return (
-    <header class=" bg-transparent w-full duration-500 ease-in-out flex items-center justify-between py-11 px-5 top-0 header z-20 bg-white ">
+    <header class=" bg-transparent w-full duration-500 ease-in-out flex items-center justify-between py-11 px-2 md:px-5 top-0 header z-20 bg-white ">
         <div class="md:flex hidden items-center mx-7">
           <img src="/fr-icon.png" alt="Codata logo" className="h-5 "/>
           <span class="cursor-pointer font-poppins hover:text-gray-500 pl-2">FR</span>
@@ -82,7 +82,7 @@ export default function Header() {
           <i class='menu cursor-pointer bx bx-menu px-2 text-gray-700
           py-1 text-3xl bg-gray-100 rounded-full'></i>
         </div>
-        <Image width={300} height={50} objectFit="contain" onClick={() => router.push('/')} src="/logos-1.png" alt="Codata logo" className="cursor-pointer"/>
+        <img onClick={() => router.push('/')} src="/logos-1.png" alt="Codata logo" className="h-12 cursor-pointer"/>
     </header>
   )
 }
